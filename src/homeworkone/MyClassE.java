@@ -1,4 +1,4 @@
-package HW_1;
+package homeworkone;
 /*
  * HW 1 Problem 4
  * What is wrong with the following program and how should it be fixed?

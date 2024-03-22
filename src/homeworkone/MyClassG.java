@@ -1,4 +1,4 @@
-package HW_1;
+package homeworkone;
 /*
  * HW 1 Problem 5
  * Given all the problems identified in problems 1 through 4, 
