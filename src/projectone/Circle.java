@@ -1,7 +1,7 @@
 /*
  * Jackson, Terrence
  * CMSC 335 Project 1
- * 03.24.2024
+ * 03.27.2024
  * Summary:
  * Circle child class of TwoDimensionalShape
  */
@@ -13,12 +13,12 @@ public class Circle extends TwoDimensionalShape {
 
     /*
      * Constructor that takes in one double argument for radius,
-     * calls the parent constructor to calculate/set area value,
+     * calls the parent constructor to set area value,
      * and sets object's radius value.
      */
     public Circle(double radius) {
         // A = pi * r^2
-        super(Math.PI, Math.pow(radius, 2));
+        super((Math.PI * Math.pow(radius, 2)));
         this.radius = radius;
     }
 

@@ -20,7 +20,7 @@ public class Cylinder extends ThreeDimensionalShape {
      */
     public Cylinder(double radius, double height) {
         // V = pi * r^2 * h
-        super(Math.PI, Math.pow(radius, 2), height);
+        super((Math.PI * Math.pow(radius, 2) * height));
         this.radius = radius;
         this.height = height;
     }

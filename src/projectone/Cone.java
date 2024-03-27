@@ -1,7 +1,7 @@
 /*
  * Jackson, Terrence
  * CMSC 335 Project 1
- * 03.24.2024
+ * 03.27.2024
  * Summary:
  * Cone child class of ThreeDimensionalShape
  */
@@ -14,12 +14,12 @@ public class Cone extends ThreeDimensionalShape {
 
     /*
      * Constructor that takes in two double arguments for radius and height,
-     * calls the parent constructor to calculate/set volume value,
+     * calls the parent constructor to set volume value,
      * and sets object's radius and height values.
      */
     public Cone(double radius, double height) {
         // V = pi * r^2 * (h/3)
-        super(Math.PI, Math.pow(radius, 2), (height / 3));
+        super((Math.PI * Math.pow(radius, 2) * (height / 3.0)));
         this.radius = radius;
         this.height = height;
     }

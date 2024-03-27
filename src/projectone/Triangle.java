@@ -1,7 +1,7 @@
 /*
  * Jackson, Terrence
  * CMSC 335 Project 1
- * 03.24.2024
+ * 03.27.2024
  * Summary:
  * Triangle child class of TwoDimensionalShape
  */
@@ -12,18 +12,16 @@ public class Triangle extends TwoDimensionalShape {
     // right triangle
     private final double base;
     private final double height;
-    private final double hypotenuse;
 
     /*
      * Constructor that takes in three double arguments for base, height, and
-     * hypotenuse, calls the parent constructor to calculate/set area value,
+     * hypotenuse, calls the parent constructor to set area value,
      * and sets object's base, height, and hypotenuse values.
      */
-    public Triangle(double base, double height, double hypotenuse) {
-        super(base, height);
+    public Triangle(double base, double height) {
+        super((base * height) / 2.0);
         this.base = base;
         this.height = height;
-        this.hypotenuse = hypotenuse;
     }
 
     public double getBase() {
@@ -32,10 +30,6 @@ public class Triangle extends TwoDimensionalShape {
 
     public double getHeight() {
         return this.height;
-    }
-
-    public double getHypotenuse() {
-        return this.hypotenuse;
     }
 
     /*

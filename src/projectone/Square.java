@@ -18,7 +18,7 @@ public class Square extends TwoDimensionalShape {
      */
     public Square(double sideLength) {
         // A = s * s
-        super(sideLength, sideLength);
+        super((sideLength * sideLength));
         this.sideLength = sideLength;
     }
 

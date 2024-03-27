@@ -1,7 +1,7 @@
 /*
  * Jackson, Terrence
  * CMSC 335 Project 1
- * 03.24.2024
+ * 03.27.2024
  * Summary:
  * Cube child class of ThreeDimensionalShape
  */
@@ -13,12 +13,12 @@ public class Cube extends ThreeDimensionalShape {
 
     /*
      * Constructor that takes in one double argument for sideLength,
-     * calls the parent constructor to calculate/set volume value,
+     * calls the parent constructor to set volume value,
      * and sets object's sideLength value.
      */
     public Cube(double sideLength) {
         // V = s * s * s
-        super(sideLength, sideLength, sideLength);
+        super((sideLength * sideLength * sideLength));
         this.sideLength = sideLength;
     }
 

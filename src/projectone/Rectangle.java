@@ -1,7 +1,7 @@
 /*
  * Jackson, Terrence
  * CMSC 335 Project 1
- * 03.24.2024
+ * 03.27.2024
  * Summary:
  * Rectangle child class of TwoDimensionalShape
  */
@@ -14,12 +14,12 @@ public class Rectangle extends TwoDimensionalShape {
 
     /*
      * Constructor that takes in two double arguments for width and height,
-     * calls the parent constructor to calculate/set area value,
+     * calls the parent constructor to set area value,
      * and sets object's width and height values.
      */
     public Rectangle(double width, double height) {
         // A = w * h
-        super(width, height);
+        super((width * height));
         this.width = width;
         this.height = height;
     }

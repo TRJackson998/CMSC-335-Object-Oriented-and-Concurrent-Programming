@@ -111,7 +111,7 @@ public class ShapeBox {
 			@Override
 			public Shape get() {
 				return new Triangle(getPositiveDoubleAttribute("base"),
-						getPositiveDoubleAttribute(heightAttribute), getPositiveDoubleAttribute("hypotenuse"));
+						getPositiveDoubleAttribute(heightAttribute));
 			}
 		};
 
